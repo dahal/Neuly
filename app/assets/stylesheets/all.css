@@ -1,14 +1,14 @@
 @charset "utf-8";
 
 body {
-  background: #d4d4d4 url("background.png");
+  background: #d4d4d4 ;
   
   font-family: sans-serif; }
 
 
 
 p {
-  font-size: 22px;
+  font-size: 20px;
 }
 
 

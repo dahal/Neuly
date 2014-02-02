@@ -1,29 +1,34 @@
-<p id="notice"><%= notice %></p>
+<%= render "partial/navbar" %>
+<div class = "container">
+  <div class = "col-md-4 col-md-offset-4">
+    <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Regular:</strong>
-  <%= @sell.regular %>
-</p>
+    <p>
+      <strong>Regular:</strong>
+      <%= @sell.regular %>
+    </p>
 
-<p>
-  <strong>Premium:</strong>
-  <%= @sell.premium %>
-</p>
+    <p>
+      <strong>Premium:</strong>
+      <%= @sell.premium %>
+    </p>
 
-<p>
-  <strong>Domain:</strong>
-  <%= @sell.domain %>
-</p>
+    <p>
+      <strong>Domain:</strong>
+      <%= @sell.domain %>
+    </p>
 
-<p>
-  <strong>Price:</strong>
-  <%= @sell.price %>
-</p>
+    <p>
+      <strong>Price:</strong>
+      <%= @sell.price %>
+    </p>
 
-<p>
-  <strong>Description:</strong>
-  <%= @sell.description %>
-</p>
+    <p>
+      <strong>Description:</strong>
+      <%= @sell.description %>
+    </p>
 
-<%= link_to 'Edit', edit_sell_path(@sell) %> |
-<%= link_to 'Back', sells_path %>
+    <%= link_to 'Edit', edit_sell_path(@sell) %> |
+    <%= link_to 'Back', sells_path %>
+  </div>
+</div>
