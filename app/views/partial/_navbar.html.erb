@@ -14,7 +14,7 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Sell</a></li>
+        <li><%= link_to 'Sell', new_sell_path, :class => 'navbar-link' %></li>
         <li><a href="#">Buy</a></li>
       </ul>
       <!--Search-->
@@ -29,7 +29,7 @@
       <ul class="nav navbar-nav navbar-right">
         <!--<li><a href="#">Account</a></li>-->
         <% if user_signed_in? %>
-          <li>Logged in as <%= current_user.email %>.</li>
+          <li><small><br/>Logged in as <%= current_user.email %>.</small></li>
           <li><%= link_to 'Edit profile', edit_user_registration_path, :class => 'navbar-link' %></li>
           <li><%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %></li>
         <% else %>
