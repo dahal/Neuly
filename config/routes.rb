@@ -1,4 +1,6 @@
 Neuly::Application.routes.draw do
+  resources :sells
+
   devise_for :users
   root 'home#index'
   get "home/index"

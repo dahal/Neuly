@@ -11,7 +11,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140201053151) do
+ActiveRecord::Schema.define(version: 20140202082027) do
+
+  create_table "sells", force: true do |t|
+    t.boolean  "regular"
+    t.boolean  "premium"
+    t.string   "domain"
+    t.decimal  "price"
+    t.text     "description"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "users", force: true do |t|
     t.string   "email",                  default: "", null: false
