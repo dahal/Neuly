@@ -1,5 +1,6 @@
 class SellsController < ApplicationController
   before_action :set_sell, only: [:show, :edit, :update, :destroy]
+  before_action :authenticate_user!
 
   # GET /sells
   # GET /sells.json
