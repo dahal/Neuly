@@ -46,6 +46,9 @@ gem 'devise'
 gem 'cancan'
 gem 'rolify'
 
+gem 'activeadmin', github: 'gregbell/active_admin'
+
+#gem "meta_search",    '>= 1.1.0.pre'
 
 group :development do
   gem 'sqlite3'
